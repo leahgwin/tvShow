@@ -16,10 +16,7 @@ const buildTvSection = Object.create({}, {
             <div id = "watchedShow"></div>
             <div id = "deleteButton"></div>
         `))
-    //     }
-    // },
-    // "buildTvModal": {
-    //     value: function () {
+        //framework for the modal
             let modal = (`
             <div class="modal fade" id="newTvShowModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
@@ -31,7 +28,12 @@ const buildTvSection = Object.create({}, {
                     </button>
                   </div>
                   <div class="modal-body">
-
+                  <form id="editEventForm">
+                  TV Show Name: <input id="nameInput">
+                    <br>
+                    Plot: <input id="plotInput">
+                    <br>
+                    Number of Seasons: <input id="seasonsInput">
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -41,15 +43,44 @@ const buildTvSection = Object.create({}, {
               </div>
             </div>`)
             //this appends the entire modal to the section inside main div
-        $("#tvModal").append(modal);
-        //need to build a function for addNewTvShow
-        $("#saveNewTvShow").on("click", addNewTvShow)
+            $("#tvModal").append(modal);
+            //need to build a function for addNewTvShow
+            $("#saveNewTvShow").on("click", makeTvShow.addNewTvShow);
         }
     },
+    buildSingleTvShow() {
+
+
+
+    }
 })
 
 buildTvSection.buildTvShowSection();
 
+const makeTvShow = Object.create({}, {
 
+        // "editTvShow": {
+        //     value: function () {
+        //     console.log("edit event", event.target.id);
+
+        //     ajax.getField(`events/${event.target.id}`).then((eventInfo) => {
+        //         console.log("INFO", eventInfo.name);
+        //         $(`#editEventInput${eventInfo.id}`).val(eventInfo.name);
+        //         $(`#editEventLocation${eventInfo.id}`).val(eventInfo.location);
+        //         $(`#editEventParty-time${eventInfo.id}`).val(eventInfo.date);
+        //     })
+        //     }
+        // }
+"addNewTvShow": {
+        function () {
+            console.log('addNewTvShow');
+            let name = document.getElementById("nameInput").value;
+            let plot = document.getElementById("plotInput").value;
+            let seasons = document.getElementById("seasonsInput").value;
+            ajax.postEvent(name, plot, seasons).then(
+                // buildTvSection.PLUGSOMETHINGHERE());
+            )}
+    }
+    })
 // module.exports = buildTvSection;
 
