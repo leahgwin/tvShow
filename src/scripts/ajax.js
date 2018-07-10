@@ -1,5 +1,4 @@
 const $ = require('jquery')
-const ajax = require('../ajaxCalls')
 
 
 class ajaxCalls {
