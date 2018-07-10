@@ -1,0 +1,23 @@
+{
+"tvShows": [
+    {
+        "name": "Blacklist",
+        "plot": "A highly articulate, erudite and intelligent businessman and mastermind, Raymond Reddington, has allegedly been on the '10 Most Wanted List' of various U.S. law enforcement agencies for over 20 years. The legend is that Red is as elusive as he is clever, controlling a labyrinth of creative enterprises, coupled with uncanny ability to gather and finesse information at the drop of a hat. On the first day at FBI for a new female profiler fresh out of Quantico, Red offers to bandy wits with the FBI. Red promises to deliver various criminals and plots previously unknown to any branch of law enforcement... and all Red requests in return is to choose his muse.",
+        "seasons": "5",
+        "id": 1
+    },
+    {
+        "name": "The Good Place",
+        "plot": "Eleanor Shellstrop, has been sent to the 'good place' after her death for her excellent positive actions and contribution on earth. The only problem is that there has been a mix-up and Eleonor Shellstrop actually wasn't so good during her life time; in fact she was absolutely awful. Worried that she will be sent to the bad place, if anyone finds out, she meets Chidi Anagonye who will try to help her become a better person.",
+        "seasons": "5",
+        "id": 2
+    },
+    {
+        "name": "Handmaid's Tale",
+        "plot": "The Handmaid's Tale is the story of life in the dystopia of Gilead, a totalitarian society in what was the United States. Gilead is ruled by a fundamentalist regime that treats women as property of the state, and is faced with environmental disasters and a plummeting birth rate. In a desperate attempt to repopulate a devastated world, the few remaining fertile women are forced into sexual servitude. One of these women, Offred, is determined to survive the terrifying world she lives in, and find the daughter that was taken from her.",
+        "seasons": "2",
+        "id": 3
+    }
+
+]
+}
